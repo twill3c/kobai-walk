@@ -1,0 +1,29 @@
+:root {
+  color-scheme: dark;
+  --bg: #101512;
+  --surface: #171d19;
+  --border: rgba(255, 255, 255, 0.1);
+  --fg: #e8efe9;
+  --fg-secondary: #c3c2b7;
+  --fg-muted: #8a9089;
+  --accent: #1baf7a;
+  --racer-gd: #3987e5;
+  --racer-mom: #d95926;
+  --racer-ada: #1baf7a;
+  --warn: #e66767;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", system-ui,
+    sans-serif;
+  min-height: 100dvh;
+}
