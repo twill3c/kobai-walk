@@ -1,0 +1,12 @@
+{"v": "1.2", "ts": "2026-08-17T03:01:52+09:00", "project": "kobai-walk", "loop_id": "loop_001", "event": "loop_start", "data": {"goal": "最適化コア: PRNG・データ 2 種・線形/ロジスティック loss+grad・GD/Momentum/AdaGrad・正規方程式と λmax の解析オラクル・数理ゲート G-01〜G-06", "spec_refs": ["F-01", "F-02", "F-03", "F-04", "G-01", "G-02", "G-03", "G-04", "G-05", "G-06"], "scaffold_version": "1.8.0", "agent": "claude-code"}}
+{"v": "1.2", "ts": "2026-08-17T03:01:52+09:00", "project": "kobai-walk", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 1, "stage_name": "計画", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-17T03:01:53+09:00", "project": "kobai-walk", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 2, "stage_name": "文脈読込", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-17T03:03:44+09:00", "project": "kobai-walk", "loop_id": "loop_001", "event": "test_run", "data": {"command": "npx vitest run", "passed": 0, "failed": 6}}
+{"v": "1.2", "ts": "2026-08-17T03:03:44+09:00", "project": "kobai-walk", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 3, "stage_name": "テスト先行", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-17T03:03:56+09:00", "project": "kobai-walk", "loop_id": "loop_001", "event": "correction", "data": {"supersedes": 4, "reason": "test_run の failed を 6 と誤記(実際は 7 ファイル失敗)。出力転記ミス"}}
+{"v": "1.2", "ts": "2026-08-17T03:03:56+09:00", "project": "kobai-walk", "loop_id": "loop_001", "event": "test_run", "data": {"command": "npx vitest run", "passed": 0, "failed": 7}}
+{"v": "1.2", "ts": "2026-08-17T03:05:36+09:00", "project": "kobai-walk", "loop_id": "loop_001", "event": "test_run", "data": {"command": "npx vitest run", "passed": 17, "failed": 0}}
+{"v": "1.2", "ts": "2026-08-17T03:05:36+09:00", "project": "kobai-walk", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 4, "stage_name": "実装", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-17T03:06:31+09:00", "project": "kobai-walk", "loop_id": "loop_001", "event": "test_run", "data": {"command": "npm run verify (vitest --coverage)", "passed": 17, "failed": 0}}
+{"v": "1.2", "ts": "2026-08-17T03:06:31+09:00", "project": "kobai-walk", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 5, "stage_name": "検証", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-17T03:06:31+09:00", "project": "kobai-walk", "loop_id": "loop_001", "event": "stage_end", "data": {"stage": 6, "stage_name": "文書同期", "result": "pass"}}
