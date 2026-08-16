@@ -10,3 +10,5 @@
 {"v": "1.2", "ts": "2026-08-17T03:17:03+09:00", "project": "kobai-walk", "loop_id": "loop_002", "event": "test_run", "data": {"command": "npm run verify (vitest --coverage)", "passed": 19, "failed": 0}}
 {"v": "1.2", "ts": "2026-08-17T03:17:03+09:00", "project": "kobai-walk", "loop_id": "loop_002", "event": "stage_end", "data": {"stage": 5, "stage_name": "検証", "result": "pass"}}
 {"v": "1.2", "ts": "2026-08-17T03:17:04+09:00", "project": "kobai-walk", "loop_id": "loop_002", "event": "stage_end", "data": {"stage": 6, "stage_name": "文書同期", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-17T03:17:04+09:00", "project": "kobai-walk", "loop_id": "loop_002", "event": "commit", "data": {"sha": "318ba06", "kind": "feat"}}
+{"v": "1.2", "ts": "2026-08-17T03:17:05+09:00", "project": "kobai-walk", "loop_id": "loop_002", "event": "loop_end", "data": {"outcome": "success", "failure_count": 2, "summary": "レース UI 完成。テスト 19 件 green・verify PASS・実機確認済み。失敗 2 件(VERIF-GAP×2 → LL-10 発動で HC-002 起票・AGENTS へ規範追記)"}}
