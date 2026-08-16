@@ -67,6 +67,16 @@ export function lossColor(t: number): string {
   ]);
 }
 
+/**
+ * 損失 1 点の対数正規化(T-063 / HC-002)。
+ * 発散(NaN / ±Inf)は 1 = チャート上端に張り付ける — 発散を見せる UI では正常系
+ */
+export function logNormLoss(v: number, min: number, span: number): number {
+  if (!Number.isFinite(v)) return 1;
+  if (span === 0) return 0.5;
+  return (Math.log10(Math.max(v, 1e-300)) - min) / span;
+}
+
 /** レース曲線の SVG points(T-061)。対数軸・kyokai-lab と同じ契約 */
 export function raceCurvePoints(
   losses: number[],

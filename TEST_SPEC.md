@@ -26,6 +26,8 @@
 | T-051 | F-04 | Momentum / AdaGrad の 1 歩 | 更新式 v←βv−lr·g / 蓄積 G←G+g² を手計算と照合 |
 | T-060 | F-05 | lossGrid / lossColor | 格子形状・対数正規化の単調性・#rrggbb |
 | T-061 | F-08 | raceCurves(対数軸 points) | kyokai-lab 同型: 正値のみ・単調写像・空列は空文字 |
+| T-062 | F-07 | lrFromSlider / sliderFromLr | 対数目盛の相互写像(10^s)・端点 0.01/4.0・往復で一致 |
+| T-063 | F-08/HC-002 | logNormLoss(非有限値の挙動定義) | 有限値は対数正規化・NaN/±Inf は 1(上端張り付き)・span 0 は 0.5 |
 | T-070 | N-03 | batchSize | 全速度で上限以下・1x は 1 |
 | T-080 | F-10 | FOOTER_LINKS | 5 件・全 https・ラベル非空・歩き方≠設計図 |
 | T-100 | G-03 | GD・lr=1/λmax・500 ステップ | 正規方程式解との距離 < 1e-6 |
